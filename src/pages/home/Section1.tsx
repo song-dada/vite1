@@ -5,7 +5,7 @@ const Section1 = () => {
     const [textActive, setTextActive] = useState(false);
     const [showCicle, setShowCicle] = useState(false);
     const [bgIdx, setBgIdx] = useState(0);
-    const bgImgs = ['/img/img1.jpg', '/img/img2.jpg', '/img/img3.jpg'];
+    const bgImgs = ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg'];
     useEffect(() => {
         const timer = setTimeout(() => setTextActive(true), 1000);
         return () => clearTimeout(timer);
@@ -23,7 +23,7 @@ const Section1 = () => {
         <div className="section1">
             {
                 bgImgs.map((item, idx) => (
-                    <img key={idx} src={'.'+item} alt={`img-${idx}`} className={`img-bg ${(bgIdx === idx ? 'bg-on' : '')}`} />
+                    <img key={idx} src={item} alt={`img-${idx}`} className={`img-bg ${(bgIdx === idx ? 'bg-on' : '')}`} />
                 ))
             }
             <div className={`text-box ${textActive ? 'text-on' : ''}`}>
