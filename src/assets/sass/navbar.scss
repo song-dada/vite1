@@ -1,0 +1,28 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    // padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    // gap: 100px;
+    backdrop-filter: blur(10px);
+
+    .logo{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left:  5rem;
+    }
+    .nav-links{
+        display:flex;
+        gap: 3rem;
+        margin-right: 5rem;
+        list-style: none;
+        a{
+            text-decoration: none;
+            font: #222;
+        }
+    }
+}
