@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../../assets/sass/section1.scss';
 
 const Section1 = () => {
